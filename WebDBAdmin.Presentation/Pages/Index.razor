@@ -19,7 +19,7 @@
             <RadzenTabsItem Text="@(conn.Name ?? conn.Database ?? "Connection")" Icon="storage">
                 <Template>
                     <RadzenText Text="@(conn.Name ?? conn.Database ?? "Connection")"
-                        Style="margin-right: 8px; display: inline-block;" />
+                                Style="margin-right: 8px; display: inline-block;" />
                     <span @onclick:stopPropagation="true" @onclick="@(() => CloseTab(conn))" style="cursor: pointer;">
                         <RadzenIcon Icon="close" Style="font-size: 0.8rem;" />
                     </span>
@@ -60,3 +60,10 @@
         selectedIndex = 0; // Go back to connections list
     }
 }
+
+<style>
+    .rz-tabview-nav li .rz-tabview-title {
+        font-size: 0.8rem !important; 
+        font-weight: 500;
+    }
+</style>
