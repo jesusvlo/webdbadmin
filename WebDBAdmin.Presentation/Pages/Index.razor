@@ -3,11 +3,12 @@
 @using WebDBAdmin.Domain.Entities
 @using WebDBAdmin.Presentation.Pages
 
+@inject Microsoft.Extensions.Localization.IStringLocalizer<WebDBAdmin.Presentation.Resources.SharedResource> Loc
 <PageTitle>WebDB Admin</PageTitle>
 
 <RadzenTabs @bind-SelectedIndex="selectedIndex" RenderMode="TabRenderMode.Client" Style="height: 100%; width: 100%;">
     <Tabs>
-        <RadzenTabsItem Text="Connections" Icon="link">
+        <RadzenTabsItem Text="@Loc["Connections"]" Icon="link">
             <RadzenStack Style="padding: 1rem; height: 100%; overflow: auto;">
                 <!-- Embed Connections page logic -->
                 <Connections OnConnectionOpen="@OnConnectionOpen" />
@@ -16,11 +17,15 @@
 
         @foreach (var conn in openConnections)
         {
-            <RadzenTabsItem Text="@(conn.Name ?? conn.Database ?? "Connection")" Icon="storage">
+            <RadzenTabsItem>
                 <Template>
-                    <RadzenText Text="@(conn.Name ?? conn.Database ?? "Connection")"
-                                Style="margin-right: 8px; display: inline-block;" />
-                    <span @onclick:stopPropagation="true" @onclick="@(() => CloseTab(conn))" style="cursor: pointer;">
+                    <RadzenIcon Icon="storage" Style="vertical-align: middle; margin-right: 0.5rem;" />
+                    <span class="rz-tabview-title"
+                        style="vertical-align: middle; margin-right: 0.5rem; display: inline-block;">
+                        @(conn.Name ?? conn.Database ?? "Connection")
+                    </span>
+                    <span @onclick:stopPropagation="true" @onclick="@(() => CloseTab(conn))"
+                        style="cursor: pointer; vertical-align: middle; display: inline-flex; align-items: center;">
                         <RadzenIcon Icon="close" Style="font-size: 0.8rem;" />
                     </span>
                 </Template>
@@ -63,7 +68,7 @@
 
 <style>
     .rz-tabview-nav li .rz-tabview-title {
-        font-size: 0.8rem !important; 
+        font-size: 0.8rem !important;
         font-weight: 500;
     }
 </style>

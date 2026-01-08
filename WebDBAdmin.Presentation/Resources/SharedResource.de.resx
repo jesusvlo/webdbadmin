@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Connections" xml:space="preserve">
+    <value>Verbindungen</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Sprache auswählen</value>
+  </data>
+  <data name="StoredConnections" xml:space="preserve"><value>Gespeicherte Verbindungen</value></data>
+  <data name="AddConnection" xml:space="preserve"><value>Verbindung hinzufügen</value></data>
+  <data name="ConnectionName" xml:space="preserve"><value>Name</value></data>
+  <data name="Engine" xml:space="preserve"><value>Motor</value></data>
+  <data name="Server" xml:space="preserve"><value>Server</value></data>
+  <data name="Database" xml:space="preserve"><value>Datenbank</value></data>
+  <data name="User" xml:space="preserve"><value>Benutzer</value></data>
+  <data name="AreYouSure" xml:space="preserve"><value>Sind Sie sicher?</value></data>
+  <data name="Yes" xml:space="preserve"><value>Ja</value></data>
+  <data name="No" xml:space="preserve"><value>Nein</value></data>
+  <data name="Saved" xml:space="preserve"><value>Gespeichert</value></data>
+  <data name="ConnectionSaved" xml:space="preserve"><value>Verbindung erfolgreich gespeichert.</value></data>
+  <data name="ConnectionUpdated" xml:space="preserve"><value>Verbindung erfolgreich aktualisiert.</value></data>
+  <data name="Deleted" xml:space="preserve"><value>Gelöscht</value></data>
+  <data name="ConnectionDeleted" xml:space="preserve"><value>Verbindung gelöscht.</value></data>
+  <data name="Connected" xml:space="preserve"><value>Verbunden</value></data>
+  <data name="ConnectedTo" xml:space="preserve"><value>Verbunden mit</value></data>
+  <data name="ConnectionFailed" xml:space="preserve"><value>Verbindungsfehler</value></data>
+  <data name="EditConnection" xml:space="preserve"><value>Verbindung bearbeiten</value></data>
+  <data name="OpenConnection" xml:space="preserve"><value>Verbindung öffnen</value></data>
+  <data name="DeleteConnection" xml:space="preserve"><value>Verbindung löschen</value></data>
+</root>

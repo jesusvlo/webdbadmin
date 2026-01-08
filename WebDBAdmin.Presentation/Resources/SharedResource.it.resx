@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Connections" xml:space="preserve">
+    <value>Connessioni</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Seleziona lingua</value>
+  </data>
+  <data name="StoredConnections" xml:space="preserve"><value>Connessioni salvate</value></data>
+  <data name="AddConnection" xml:space="preserve"><value>Aggiungi connessione</value></data>
+  <data name="ConnectionName" xml:space="preserve"><value>Nome</value></data>
+  <data name="Engine" xml:space="preserve"><value>Motore</value></data>
+  <data name="Server" xml:space="preserve"><value>Server</value></data>
+  <data name="Database" xml:space="preserve"><value>Database</value></data>
+  <data name="User" xml:space="preserve"><value>Utente</value></data>
+  <data name="AreYouSure" xml:space="preserve"><value>Sei sicuro?</value></data>
+  <data name="Yes" xml:space="preserve"><value>Sì</value></data>
+  <data name="No" xml:space="preserve"><value>No</value></data>
+  <data name="Saved" xml:space="preserve"><value>Salvato</value></data>
+  <data name="ConnectionSaved" xml:space="preserve"><value>Connessione salvata con successo.</value></data>
+  <data name="ConnectionUpdated" xml:space="preserve"><value>Connessione aggiornata con successo.</value></data>
+  <data name="Deleted" xml:space="preserve"><value>Eliminato</value></data>
+  <data name="ConnectionDeleted" xml:space="preserve"><value>Connessione eliminata.</value></data>
+  <data name="Connected" xml:space="preserve"><value>Connesso</value></data>
+  <data name="ConnectedTo" xml:space="preserve"><value>Connesso a</value></data>
+  <data name="ConnectionFailed" xml:space="preserve"><value>Connessione fallita</value></data>
+  <data name="EditConnection" xml:space="preserve"><value>Modifica connessione</value></data>
+  <data name="OpenConnection" xml:space="preserve"><value>Apri connessione</value></data>
+  <data name="DeleteConnection" xml:space="preserve"><value>Elimina connessione</value></data>
+</root>

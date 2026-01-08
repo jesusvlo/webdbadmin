@@ -5,12 +5,19 @@
 @using WebDBAdmin.Presentation.Components
 
 <RadzenComponents />
+<MudBlazor.MudThemeProvider />
+<MudBlazor.MudPopoverProvider />
 
 <RadzenLayout
     Style="height: 100vh; grid-template-columns: 1fr; grid-template-rows: auto 1fr; grid-template-areas: 'rz-header' 'rz-body';">
     <RadzenHeader Class="rz-background-color-base-100">
-        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0" Style="height: 100%;">
-            <RadzenImage Path="images/logowebdbadmin.png" Style="margin-left: 1rem;width: 74px; height: 32px;" AlternateText="logo" />
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0"
+            Style="height: 100%; width: 100%; justify-content: space-between;">
+            <RadzenImage Path="images/logowebdbadmin.png" Style="margin-left: 1.5rem;width: 74px; height: 32px;"
+                AlternateText="logo" />
+            <div style="margin-right: 3rem; margin-left: auto;">
+                <LanguageSelector />
+            </div>
         </RadzenStack>
     </RadzenHeader>
     <RadzenBody Style="padding: 0; overflow: hidden;">

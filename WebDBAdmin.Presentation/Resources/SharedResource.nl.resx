@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Connections" xml:space="preserve">
+    <value>Verbindingen</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Instellingen</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Selecteer taal</value>
+  </data>
+  <data name="StoredConnections" xml:space="preserve"><value>Opgeslagen verbindingen</value></data>
+  <data name="AddConnection" xml:space="preserve"><value>Verbinding toevoegen</value></data>
+  <data name="ConnectionName" xml:space="preserve"><value>Naam</value></data>
+  <data name="Engine" xml:space="preserve"><value>Motor</value></data>
+  <data name="Server" xml:space="preserve"><value>Server</value></data>
+  <data name="Database" xml:space="preserve"><value>Database</value></data>
+  <data name="User" xml:space="preserve"><value>Gebruiker</value></data>
+  <data name="AreYouSure" xml:space="preserve"><value>Weet u het zeker?</value></data>
+  <data name="Yes" xml:space="preserve"><value>Ja</value></data>
+  <data name="No" xml:space="preserve"><value>Nee</value></data>
+  <data name="Saved" xml:space="preserve"><value>Opgeslagen</value></data>
+  <data name="ConnectionSaved" xml:space="preserve"><value>Verbinding succesvol opgeslagen.</value></data>
+  <data name="ConnectionUpdated" xml:space="preserve"><value>Verbinding succesvol bijgewerkt.</value></data>
+  <data name="Deleted" xml:space="preserve"><value>Verwijderd</value></data>
+  <data name="ConnectionDeleted" xml:space="preserve"><value>Verbinding verwijderd.</value></data>
+  <data name="Connected" xml:space="preserve"><value>Verbonden</value></data>
+  <data name="ConnectedTo" xml:space="preserve"><value>Verbonden met</value></data>
+  <data name="ConnectionFailed" xml:space="preserve"><value>Verbinding mislukt</value></data>
+  <data name="EditConnection" xml:space="preserve"><value>Verbinding bewerken</value></data>
+  <data name="OpenConnection" xml:space="preserve"><value>Verbinding openen</value></data>
+  <data name="DeleteConnection" xml:space="preserve"><value>Verbinding verwijderen</value></data>
+</root>

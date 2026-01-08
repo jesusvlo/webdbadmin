@@ -1,0 +1,32 @@
+@using System.Globalization
+@using Microsoft.AspNetCore.Components
+@using MudBlazor
+@inject NavigationManager NavigationManager
+@inject Microsoft.Extensions.Localization.IStringLocalizer<WebDBAdmin.Presentation.Resources.SharedResource> Loc
+
+<MudMenu Icon="@Icons.Material.Filled.Language" Style="color:#757575" AnchorOrigin="Origin.BottomCenter"
+         TransformOrigin="Origin.TopCenter" Dense="true">
+    <MudMenuItem OnClick="@(() => OnCultureChanged("en-US"))">🇺🇸 English</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("es-ES"))">🇪🇸 Español</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("de-DE"))">🇩🇪 Deutsch</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("fr-FR"))">🇫🇷 Français</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("it-IT"))">🇮🇹 Italiano</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("pt-PT"))">🇵🇹 Português</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("nl-NL"))">🇳🇱 Nederlands</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("sv-SE"))">🇸🇪 Svenska</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("nb-NO"))">🇳🇴 Norsk</MudMenuItem>
+    <MudMenuItem OnClick="@(() => OnCultureChanged("el-GR"))">🇬🇷 Ελληνικά</MudMenuItem>
+</MudMenu>
+
+@code {
+    private void OnCultureChanged(string value)
+    {
+        if (value is string culture)
+        {
+            var uri = new Uri(NavigationManager.Uri)
+            .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
+            var query = $"?culture={Uri.EscapeDataString(culture)}&redirectUri={Uri.EscapeDataString(uri)}";
+            NavigationManager.NavigateTo($"/Culture/Set{query}", forceLoad: true);
+        }
+    }
+}
