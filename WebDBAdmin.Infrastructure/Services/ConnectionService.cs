@@ -11,7 +11,7 @@ public class ConnectionService : IConnectionService
     public ConnectionService()
     {
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        var appFolder = Path.Combine(appData, "UniversalDBStudio");
+        var appFolder = Path.Combine(appData, "WebDBAdmin");
         if (!Directory.Exists(appFolder))
         {
             Directory.CreateDirectory(appFolder);

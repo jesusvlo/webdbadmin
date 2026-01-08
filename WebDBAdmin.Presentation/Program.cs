@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
-// Add UniversalDBStudio Layers
+// Add WebDBAdmin Layers
 builder.Services.AddInfrastructure();
 builder.Services.AddApplication();
 
